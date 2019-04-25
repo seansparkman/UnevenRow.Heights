@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Uneven.Heights"
+             x:Class="Uneven.Heights.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Got enough Nicholas Cage!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+        <CollectionView ItemsSource="{Binding Cages}">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical"
+                                 Span="2"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame VerticalOptions="Fill"
+                           BackgroundColor="Green"
+                           Margin="15"
+                           CornerRadius="20"
+                           HeightRequest="200">
+                        <Image Source="{Binding ImageURL}"
+                               VerticalOptions="FillAndExpand"
+                               HorizontalOptions="Fill" />
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+
+</ContentPage>
