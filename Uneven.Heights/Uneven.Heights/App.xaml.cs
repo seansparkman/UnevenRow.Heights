@@ -13,7 +13,7 @@ namespace Uneven.Heights
             HotReloader.Current.Start(this);
 #endif
 
-            MainPage = new MainPage();
+            MainPage = new TabbedCage();
         }
 
         protected override void OnStart()

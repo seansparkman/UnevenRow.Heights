@@ -11,9 +11,9 @@ namespace Uneven.Heights
     // Learn more about making custom code visible in the Xamarin.Forms previewer
     // by visiting https://aka.ms/xamarinforms-previewer
     [DesignTimeVisible(true)]
-    public partial class MainPage : ContentPage, IReloadable
+    public partial class CollectionViewCage : ContentPage, IReloadable
     {
-        public MainPage()
+        public CollectionViewCage()
         {
             InitializeComponent();
             BindingContext = new CagesViewModel();
